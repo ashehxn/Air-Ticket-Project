@@ -1,0 +1,123 @@
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 5px; /* 5px rounded corners */
+}
+
+body {
+  background: #020400;
+}
+
+.background{
+    width: 100%;
+    height: 100vh;
+    background: url('254361.webp')no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: blur(10px);
+    -webkit-filter: blur(10px);
+}
+
+.p2{
+    color: azure;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+
+.container1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 75%;
+    height: 500px;
+    background: url('254361.webp') no-repeat;
+    background-size: cover;
+    background-position: center;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+}
+ 
+
+.title{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: azure;
+    font-size: x-large;
+}
+
+.input{
+    
+
+}
+
+.input-box{
+    position: relative;
+    width: 300px;
+    height: 20px;
+    margin: 15px 0 ;
+    border-bottom: 2px solid whitesmoke;
+    margin: 30px;
+
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline:none;
+    
+}
+
+
+
+.input-box dd{
+    background: transparent;
+    position: absolute;
+    color: white;
+    top: -20%;
+    left: 0%;
+    transform: translate(10%);
+    -webkit-transform: translate(10%);
+    -moz-transform: translate(10%);
+    -ms-transform: translate(10%);
+    -o-transform: translate(10%);
+}
+
+.input-box label {
+    color: white;
+    position: absolute;
+    top: 10%;
+    left: -3%;
+    transform: translate(10%);
+    font-size: 16px;
+    font-weight: 500;
+    pointer-events: none;
+    transition: .5s ease;
+    -webkit-transition: .5s ease;
+    -moz-transition: .5s ease;
+    -ms-transition: .5s ease;
+    -o-transition: .5s ease;
+    -webkit-transform: translate(10%);
+    -moz-transform: translate(10%);
+    -ms-transform: translate(10%);
+    -o-transform: translate(10%);
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label{
+    top:-10%;
+}
+
+
+.inputs{ 
+    background: transparent;
+    border: none;
+}
+
+.p1{
+    font-family: monospace;
+
+}
