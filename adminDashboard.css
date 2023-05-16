@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* ---------------  Main navigation bar of admin panel  ----------------------*/
+
+.admin-main-nav{
+    background-color: rgb(62, 208, 241);
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding-right: 14px;
+}
+
+/*---------------------------------------------------------------*/
+
+/*---------------------  body of the admin dashboard  -----------------------------*/
+
+.admin-main-container{
+    display: grid;
+    grid-template-areas:
+        'side details details details details details details'
+        'side list list list list list list'
+    ;
+    margin-right: 10px;
+    margin-left: 10px;
+    padding-top: 10px;
+    row-gap: 6px;
+    column-gap: 6px;
+    grid-template-rows: 100px 71vh;
+}
+
+.admin-side-nav{
+    border: solid 3px black;
+    height: 85vh;
+    grid-area: side;
+    border-radius: 10px;
+    display:grid;
+    
+}
+.btn-box{
+    display: grid;
+    height: 300px;
+    padding: 10px;
+}
+.btn-box button{
+    margin-bottom: 7px;
+    border-radius: 6px;
+    font-size: 20px;
+    border: none;
+    background-color: rgb(120, 211, 181);
+}
+.btn-box button:hover{
+    background-color:  rgb(47, 221, 163);
+    cursor: pointer;
+}
+
+.admin-manage-list{
+    grid-area: list;
+    border: solid 3px black;
+    border-radius: 10px;
+}
+.admin-detail-container{
+    grid-area: details;
+    border: solid 3px black;
+    border-radius: 10px;
+    display: grid;
+    grid-area: auto auto auto;
+
+}
+
+.admin-detail-container div{
+
+    border: 3px solid;
+    border-radius: 18px;
+    margin: 15px;
+    padding: 10px 10px 10px 10px;
+    height: 46px;
+}
+.flights{
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+.planes{
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+.total{
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------System Admin list dinamic form ---------------------*/
+
+.list-content{
+    display: flex;
+    background-color: aqua;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    border: 1px solid black;
+    padding: 3px 3px 3px 3px;
+    margin-bottom: 9px;
+    border-radius: 3px;
+}
+
+.admin-list{
+    padding: 10px 10px 10px 10px;
+    
+}
+
+.admin-container{
+    height: 444px;
+    overflow-y: auto;
+    
+}
+
+.list-content p{
+    padding-left: 15px;
+    font-size: 20px;
+}
+.list-content button{
+    margin-right: 30px;
+    height: 30px;
+    width: 90px;
+    border: none;
+    background-color: rgb(164, 106, 189);
+    border-radius: 4px;
+}
+
+.list-content button:hover{
+    background-color: rgb(126, 33, 166);
+    cursor: pointer;
+}
+
+.admin-title{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.add-admin button{
+    background-color: rgb(212, 85, 85);
+}
+
+.add-admin button:hover{
+    background-color: rgb(177, 10, 10);
+}
+
+.add-admin{
+    background-color: rgb(122, 122, 223);
+}
+
