@@ -42,6 +42,25 @@ nav {
   justify-content: flex-end;
 }
 
+.topnav {
+  /* background-color: #fff; */
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.topnav a {
+  color: #000;
+  text-align: center;
+  padding: 14px 18px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  color: #7048e8;
+}
+
 .top-logo {
   position: absolute;
   top: -13px;
@@ -275,9 +294,6 @@ input:focus {
   bottom: -60px;
   right: 0px;
 }
-
-/* Benefits section */
-
 .benefits-section {
   margin-bottom: 128px;
 }
@@ -352,14 +368,4 @@ h2 {
   justify-content: center;
 }
 
-.topnav a {
-  color: #000;
-  text-align: center;
-  padding: 14px 18px;
-  text-decoration: none;
-  font-size: 17px;
-}
 
-.topnav a:hover {
-  color: #7048e8;
-}
