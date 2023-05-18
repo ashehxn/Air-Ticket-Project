@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+nav {
+    background-color: #fff;
+    height: 80px;
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.topnav {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.topnav a {
+    color: #000;
+    text-align: center;
+    padding: 14px 18px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    color: #7048e8;
+}
+
+.top-logo {
+    position: absolute;
+    top: -13px;
+    left: 168px;
+}
+
+h2 {
+    text-align: center;
+    color: #444;
+    font-size: 26px;
+    margin-bottom: 64px;
+  }
+
+.main-container {
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+
+
+.input-boxes {
+    position: relative;
+
+}
+
+.flight-buttons {
+    border: none;
+    color: #fff;
+    background-color: #7048e8;
+    padding: 12px 24px;
+    border-radius: 10px;
+    font-weight: 500;
+}
+
+.flight-buttons:hover {
+    color: #7048e8;
+    background-color: #fff;
+    border: 1px solid #7048e8;
+}
+
+.passenger-input input {
+    text-align: center;
+    width: 150px;
+  }
+
+/* New Classes */
+h1{
+    text-align: center;
+}
+
+
+.title-description{
+    text-align: center;
+    width: 900px;
+    margin: auto;
+    padding-top: 60px;
+}
+
+.manage-box {
+    background-color: #fff;
+    width: 900px;
+    height: 150px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    margin-top: 55px;
+    border-radius: 10px;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.manage-description {
+    background-color: #fff;
+    width: 900px;
+    height: 250px;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    margin-top: 160px;
+    border-radius: 10px;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
