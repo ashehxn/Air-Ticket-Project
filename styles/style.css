@@ -68,6 +68,7 @@ nav {
   margin-top: 310px;
   border-radius: 10px;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  margin-bottom: 128px;
 }
 
 .input-container {
@@ -273,6 +274,75 @@ input:focus {
   position: absolute;
   bottom: -60px;
   right: 0px;
+}
+
+/* Benefits section */
+
+.benefits-section {
+  margin-bottom: 128px;
+}
+
+h2 {
+  text-align: center;
+  color: #444;
+  font-size: 26px;
+  margin-bottom: 64px;
+}
+
+.feature-icon {
+  width: 35px;
+  height: 35px;
+  position: relative;
+  left: 22px;
+  top: 22px;
+  fill: #444;
+}
+
+.icon-circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 1px solid #444;
+  position: absolute;
+}
+
+.icon-container {
+  width: 80px;
+}
+
+.benefits {
+  width: 250px;
+  height: 320px;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  justify-items: center;
+  padding: 28px;
+  border-radius: 10px;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.benefits:hover {
+  box-shadow: 0 0.5rem 1rem #7048e8;
+}
+
+.benefits-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.benefits h3,
+.benefits p {
+  margin-top: 24px;
+  text-align: center;
+}
+
+.benefits h3 {
+  text-transform: uppercase;
+  color: #7048e8;
+}
+
+.benefits p {
+  color: #444;
 }
 
 .topnav {
