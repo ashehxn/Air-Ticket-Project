@@ -67,14 +67,6 @@ nav {
   left: 168px;
 }
 
-.nav-pt1 {
-  margin-right: 300px;
-}
-
-.login-container {
-  margin-right: 170px;
-}
-
 /* Booking box */
 
 .booking-box {
@@ -294,6 +286,8 @@ input:focus {
   bottom: -60px;
   right: 0px;
 }
+
+/* Your Benefits section */
 .benefits-section {
   margin-bottom: 128px;
 }
@@ -361,3 +355,81 @@ h2 {
   color: #444;
 }
 
+/* Best Destinations Section */
+.destinations-section {
+  margin-bottom: 128px;
+}
+
+.destinations-boxes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 50px;
+}
+
+.destination {
+  height: 350px;
+  background-color: #ddd;
+  padding: 24px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.destination h3 {
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 80px;
+}
+
+.destination p {
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
+  opacity: 0%;
+}
+
+.destination a {
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  position: absolute;
+  bottom: 24px;
+  right: 24px;
+  background-color: #845ef7;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 24px;
+}
+
+.destination a:hover {
+  cursor: pointer;
+}
+
+#destination1 {
+  background-image: url("../images/paris1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+}
+
+#destination2 {
+  background-image: url("../images/tokyo1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+}
+
+#destination3 {
+  background-image: url("../images/rome1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
+
+#destination4 {
+  background-image: url("../images/sydney1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom left;
+}
