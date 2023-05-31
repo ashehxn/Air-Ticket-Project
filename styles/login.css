@@ -179,3 +179,10 @@ nav {
   color: #8b8e98;
   text-decoration: underline;
 }
+
+.admin-login{
+  width: 400px;
+  height: 500px;
+  margin-left: 750px; 
+  padding-bottom: 20px;
+}
