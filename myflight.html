@@ -5,21 +5,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Flight</title>
 
-    <!-- Google Fonts  -->
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet" />
 
-    <!-- Favicon  -->
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
 
     <!-- Font Awesome -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
-    <script src="https://kit.fontawesome.com/38f42574c5.js" crossorigin="anonymous"></script>    
+    <script src="https://kit.fontawesome.com/38f42574c5.js" crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="styles/contact.css">
-    <title>Contact us</title>
+
+    <link rel="stylesheet" href="styles/myflight.css">
 </head>
 
 <body>
@@ -35,58 +36,66 @@
             <a href="destinations.html">Best Destinations</a>
             <a href="contact.html">Contact Us</a>
             <a href="newlogin.html" style="margin-left: 75px; margin-right: 150px">Login | Sign up</a>
-             
         </div>
-          
     </nav>
 
     <div class="main-container">
+       
+        <div class="myflight-description-box">
+            <div class="myflight-description">
+                <h3>My Flight</h3>
+
+                <table>
+                    <tr>
+                        <td>Flight ID</td>
+                        <td>AK1037</td>
+                    </tr>
+                    <tr>
+                        <td>From</td>
+                        <td>Colombo Bandaranayake International Airport</td>
+                    </tr>
+
+                    <tr>
+                        <td>To</td>
+                        <td>Dubai International Airport</td>
+                    </tr>
+                    <tr>
+                        <td>Date</td>
+                        <td>01/07/2023</td>
+                    </tr>
+                    <tr>
+                        <td>Time</td>
+                        <td>00:30</td>
+                    </tr>       
+                    <tr>
+                        <td>Passengers</td>
+                        <td>2</td>
+                    </tr>   
+                    <tr>
+                        <td>Class</td>
+                        <td>Economy</td>
+                    </tr>                
+                </table>
 
 
-        <h1>How Can We Help?</h1>
-        <p class="title-description">
-            Thank you for visiting our ticket reservation system! We appreciate your feedback and inquiries. 
-            Our support team is available to assist you promptly. Contact us through the form or provided information. 
-            We aim for positive interactions and are committed to helping with your travel needs. We look forward to hearing from you and assisting you!
-         </p>
+                <!-- <ul>
+                    <li>Flight ID: AK1037</li>
+                    <li>From: Colombo Bandaranayake International Airport</li>
+                    <li>To: Dubai International Airport</li>
+                    <li>Date: 01/07/2023</li>
+                    <li>Time: 00:30</li>
+                    <li>Passengers: 2</li>
+                    <li>Class: Economy</li>
+                </ul> -->
+                <div class="both-buttons">
+                    <button class="flight-buttons">Edit Booking</button>
+                    <button class="flight-buttons">Cancel Booking</button>
+                </div>
+
+            </div>
+        </div>
     </div>
 
-    <div class="card1">
-
-        <h2>Contact Us!</h2>
-
-        <form action="countactus">
-            <div class="lable">
-                <div class="lbl1">Your Name </div>
-
-                <input type="text" placeholder="First Name">
-                <input type="text" placeholder="Second Name">
-                <br><br>
-
-                <div class="lbl1">E-mail & Phone</div>
-                <input type="email" placeholder="John.wick@gmail.com">
-                <input type="phone" placeholder="(07x xxx xxxx)"><br><br>
-
-                <div class="lbl1">Booking Reference :</div>
-                <input type="text" placeholder="(optional)"><br><br>
-
-                <div class="lbl1">Your Message </div>
-            </div>
-
-            <div class="msg">
-                <textarea rows="4" cols="96"></textarea>
-
-                <!-- <input type="text" style="width: 84%;"> -->
-            </div>
-
-            <div class="btn1">
-                <label for="myfile">Attach a file or document:</label>
-                <input type="file" id="myfile" name="myfile"><br>
-
-            </div>
-            <button class="submit-buttons">Submit</button>
-        </form>
-    </div>
 
     <footer class="footer-distributed">
 
@@ -99,8 +108,8 @@
                 <a href="book.html">Book</a>
                 <a href="manage.html">Manage</a>
                 <a href="#">Where we fly</a>
-                <a href="#">Best Destinations</a>
-                <a href="#">Contact Us</a>
+                <a href="destinations.html">Best Destinations</a>
+                <a href="contact.html">Contact Us</a>
             </p>
 
             <p class="footer-company-name">Nova Airways © 2023</p>
@@ -139,7 +148,6 @@
             </div>
         </div>
     </footer>
-
 </body>
 
 </html>
