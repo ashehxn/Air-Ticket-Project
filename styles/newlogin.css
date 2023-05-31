@@ -169,7 +169,7 @@ input {
 	width: 60%;
 	height: 40px;
 	border: 0;
-	background: #7048e8;
+	background: #5f3dc4;
 	border-radius: 23px;
 	outline: none;
 	color: #ffffff;
@@ -177,7 +177,9 @@ input {
 }
 
 .sign-in_btn:hover {
-	background: #0d4ca8;
+	background: #fff;
+	color: #7048e8;
+	border: 1px solid #7048e8;
 }
 
 .sign-up{

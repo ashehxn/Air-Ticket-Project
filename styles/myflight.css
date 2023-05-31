@@ -5,17 +5,29 @@
     font-family: "Montserrat", sans-serif;
 }
 
+body {
+    background-image: url("../images/managebg.jpg");
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y: 55px;
+}
+
+
+/* Navigation */
+
 nav {
     background-color: #fff;
     height: 80px;
     position: relative;
-
     display: flex;
     align-items: center;
     justify-content: flex-end;
 }
 
 .topnav {
+    background-color: #fff;
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -33,100 +45,94 @@ nav {
     color: #7048e8;
 }
 
-/* .top-logo {
+.top-logo {
     position: absolute;
     top: -13px;
-    left: 168px;
-} */
-
-.titel1 {
-    text-align: center;
-    font-size: 250%;
-    padding: 60px;
-
-}
-
-.title-description {
-    text-align: center;
-    width: 900px;
-    margin: auto;
-    padding-top: 60px;
+    left: 168px;
 }
 
 .main-container {
     width: 1200px;
     margin: 0 auto;
-    padding-top: 70px;
+    margin-top: 200px;
 }
 
-.main-container h1 {
-    text-align: center;
+.main-container h3{
+    margin-left: 50px;
+    margin-top: 20px;
+    /* margin-top: 200px; */
+    font-size: 2rem;
 }
 
-.card1 {
-
-    height: fit-content;
-    width: 900px;
-    padding-left: 10px;
-    padding-right: 10px;
-    transition: 0.3s;
-    background: transparent;
-
-
-    -webkit-transition: 0.3s;
-    -moz-transition: 0.3s;
-    -ms-transition: 0.3s;
-    -o-transition: 0.3s;
-
-    margin-left: 400px;
-
+.myflight-box {
     background-color: #fff;
     margin: 0 auto;
     position: relative;
     overflow: hidden;
-    margin-top: 50px;
-    margin-bottom: 150px;
     border-radius: 10px;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 }
 
-.lbl1 {
-    font-weight: 800;
-    margin-left: 30px;
-}
-
-
-.msg input {
-    height: 150px;
-}
-
-.btn1 {
-    cursor: pointer;
-}
-
-.btn1 label{
-    margin-left: 30px;
-}
-
-
-.card1 input {
-    background-color: #eee;
-    border: none;
-    padding: 12px 15px;
-    margin: 8px 0;
+.myflight-description {
+    background-color: #fff;
+    width: 800px;
+    height: 400px;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    margin-top: 25px;
+    margin-bottom: 300px;
     border-radius: 10px;
-    margin-left: 30px;
-    width: 40%;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 }
 
-.card1 h2 {
-    margin-left: 30px;
-    margin-bottom: 30px;
-    margin-top: 30px;
+/* Buttons  */
+
+.flight-buttons {
+    border: none;
+    color: #fff;
+    background-color: #7048e8;
+    padding: 12px 24px;
+    border-radius: 10px;
+    font-weight: 500;
+}
+
+.flight-buttons:hover {
+    color: #7048e8;
+    background-color: #fff;
+    border: 1px solid #7048e8;
+}
+
+.edit-buttons {
+    position: absolute;
+    bottom: -65px;
+    margin-right: 0px;
+}
+
+.cancel-buttons {
+    position: absolute;
+    bottom: -60px;
+    right: 0px;
+}
+
+.both-buttons{
+    margin-left: 450px;
+}
+
+/* Table */
+
+.myflight-description table {
+    border-collapse: separate;
+    border-spacing: 50px 0;
+    margin-top: 25px;
+  }
+
+.myflight-description td{
+    padding: 8px 0
 }
 
 
-/* Footer  */
+/* footer */
 
 .social-icon {
     margin: 20px 10px;
@@ -215,7 +221,6 @@ nav {
 .footer-distributed .footer-center p a {
     color: #F8F8F8;
     text-decoration: none;
-    ;
 }
 
 .footer-distributed .footer-links a:before {
@@ -261,47 +266,10 @@ nav {
     cursor: pointer;
     background-color: #33383b;
     border-radius: 2px;
-
     font-size: 20px;
     color: #ffffff;
     text-align: center;
     line-height: 35px;
-
     margin-right: 3px;
     margin-bottom: 5px;
-}
-
-/* Button */
-
-.submit-buttons {
-    border: none;
-    color: #fff;
-    background-color: #7048e8;
-    padding: 12px 24px;
-    border-radius: 10px;
-    font-weight: 500;
-    margin-left: 325px;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    cursor: pointer;
-    width: 25%;
-}
-
-
-textarea{
-    background-color: #eee;
-    border: none;
-    padding: 12px 15px;
-    margin: 8px 0;
-    border-radius: 10px;
-    margin-left: 30px;
-}
-
-body {
-    background-image: url("../images/customerreps.jpg");
-    background-size: cover;
-    background-position: top center;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position-y: 55px;
 }
