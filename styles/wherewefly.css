@@ -17,12 +17,12 @@ FONT SIZE SYSTEM (px)
 }
 
 body {
-  background-image: url("../images/bg4.jpg");
+  background-image: url("../images/bg5.jpg");
   background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
-  background-size: 90%;
-  background-position-y: 120px;
+  background-size: 100%;
+  background-position-y: 15px;
 }
 
 .main-container {
@@ -69,97 +69,125 @@ nav {
 
 /* Header section */
 .header-section {
-  margin-bottom: 128px;
+  margin-top: 605px;
 }
 
-h2 {
+.header-section h2 {
   text-align: center;
   color: #444;
   font-size: 26px;
-  margin-bottom: 80px;
-  margin-top: 580px;
+  margin-bottom: 36px;
 }
 
-.intro-paras {
+.header-section p {
   text-align: center;
   font-size: 18px;
   margin-bottom: 24px;
 }
 
-/* Destination boxes */
-.destination-boxes {
-  height: 350px;
-  border-radius: 20px;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-  margin-bottom: 80px;
-  display: flex;
-
+/* Tables */
+.destinations-tables {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  column-gap: 24px;
+  overflow: hidden;
   position: relative;
+  margin-top: 96px;
+  margin-bottom: 128px;
 }
 
-.destination-boxes img {
-  height: 350px;
+.button-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-content: flex-start;
 }
 
-.destination-boxes .img-type1 {
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
-}
-
-.destination-boxes .img-type2 {
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
-}
-
-.destination-heading {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 16px;
-  margin-bottom: 16px;
-  padding: 0 24px;
-  color: #7048e8;
-}
-
-.destination-boxes ul {
-  padding: 24px;
-}
-
-.destination-boxes li {
-  margin-left: 32px;
-  margin-bottom: 24px;
-}
-
-.destination-boxes a {
-  cursor: pointer;
+.button-container button {
+  height: 64px;
   border: none;
+  cursor: pointer;
+  background-color: #e5dbff;
+  color: #7048e8;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 16px 16px;
+  text-align: left;
+  border-bottom: 1px solid hsla(0, 0%, 40%, 0.2);
+}
+
+.button-container button:first-child {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.button-container button:last-child {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.button-container button:hover {
   color: #fff;
   background-color: #7048e8;
-  padding: 12px 24px;
+}
+
+.destinations-tables .table-container {
+  width: 100%;
+  box-shadow: 0 2px 4px 2px rgb(0 0 0 / 10%);
+}
+
+.destinations-tables table {
+  width: 100%;
+}
+
+.destinations-tables .table-container-inside {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.table-container span {
+  display: inline-block;
+  font-size: 24px;
+  color: #444;
+  font-weight: 600;
+  margin: 18px 48px;
+}
+
+.table-row {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  height: 48px;
+  padding: 15px;
+}
+
+.table-head-row {
+  font-weight: 600;
+  text-align: left;
+}
+
+.table-row1 {
+  background-color: #eee;
   border-radius: 10px;
-  font-weight: 500;
-  text-decoration: none;
+  border-bottom: 1px solid hsla(0, 0%, 40%, 0.2);
 }
 
-.destination-boxes a:hover {
-  color: #7048e8;
+.table-row2 {
   background-color: #fff;
-  border: 1px solid #7048e8;
 }
 
-.button-type1 {
+.table-container {
+  padding-bottom: 18px;
+  border-radius: 10px;
   position: absolute;
-  right: 20px;
-  bottom: 20px;
+  transform: translateX(200%);
+  width: 880px !important;
+  margin-top: 1px;
 }
 
-.button-type2 {
-  position: absolute;
-  right: 550px;
-  bottom: 20px;
+#table1 {
+  transform: translateX(0px);
 }
 
 /* Footer */
-
 .social-icon {
   margin: 20px 10px;
 }
@@ -172,7 +200,6 @@ h2 {
   text-align: left;
   font: bold 16px sans-serif;
   padding: 55px 50px;
-  margin-top: 128px;
 }
 
 .footer-distributed .footer-left,
@@ -182,8 +209,7 @@ h2 {
   vertical-align: top;
 }
 
-/* Footer left side */
-
+/* Footer Left Side */
 .footer-distributed .footer-left {
   width: 40%;
 }
@@ -194,7 +220,6 @@ h2 {
 }
 
 /* Footer links */
-
 .footer-distributed .footer-links {
   color: #ffffff;
   margin: 15px 0 12px;
