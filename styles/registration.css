@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+nav {
+    background-color: #fff;
+    height: 80px;
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.topnav {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.topnav a {
+    color: #000;
+    text-align: center;
+    padding: 14px 18px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    color: #7048e8;
+}
+
+/* .top-logo {
+    position: absolute;
+    top: -13px;
+    left: 168px;
+} */
+
+.main-container {
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 70px;
+}
+
+.main-container h1 {
+    text-align: center;
+}
+
+.card1 {
+
+    height: 490px;
+    width: 900px;
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: 0.3s;
+    background: transparent;
+
+
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+
+    margin-left: 400px;
+
+    background-color: #fff;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    margin-top: 50px;
+    margin-bottom: 150px;
+    border-radius: 10px;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.card1 input {
+    background-color: #eee;
+    border: none;
+    padding: 12px 15px;
+    margin: 8px 0;
+    border-radius: 10px;
+    margin-left: 30px;
+    width: 30%;
+}
+
+/* input{
+    margin: 10px;
+    border-radius: 10px;
+    padding: 5px;
+} */
+
+/* select{
+    margin: 10px;
+    border-radius: 10px;
+    padding: 5px;
+} */
+
+.card1 select{
+    background-color: #eee;
+    border: none;
+    padding: 12px 15px;
+    margin: 8px 0;
+    border-radius: 10px;
+    margin-left: 30px;
+    width: 10%;
+}
+
+.content{
+    margin-top: 30px;
+}
