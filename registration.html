@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+
+    <!-- CSS Sheet -->
+    <link rel="stylesheet" href="styles/registration.css">
+    <title>Registration Form</title>
+</head>
+
+<body>
+
+    <nav>
+        <div class="top-logo">
+            <img src="images/logo_with_txt.png" height="66px" style="margin-top: 20px; margin-left: 10px" />
+        </div>
+        <div class="topnav">
+            <a href="index.html">Home</a>
+            <a href="book.html">Book</a>
+            <a href="manage.html">Manage</a>
+            <a href="flight.html">Where we fly</a>
+            <a href="destinations.html">Best Destinations</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="newlogin.html" style="margin-left: 75px; margin-right: 150px">Login | Sign up</a>
+             
+        </div>
+          
+    </nav>
+
+    <div class="main-container">
+
+        <h1>Registration Form</h1>
+
+    </div>
+
+    <div class="card1">
+        <form action="" method="POST">
+
+            <div class="content">
+            <!-- <label for="title">Title:</label> -->
+            <select name="title" id="title" required>
+                <option value="Mr.">Mr.</option>
+                <option value="Mrs.">Mrs.</option>
+                <option value="Miss">Miss</option>
+                <option value="Ms.">Ms.</option>
+            </select>
+            
+            <!-- <label for="first-name">First Name:</label> -->
+            <input type="text" placeholder="First Name" name="first-name" id="first-name" required>
+
+            <!-- <label for="last-name">Last Name:</label> -->
+            <input type="text" placeholder="Last Name" name="last-name" id="last-name" required>
+            <br>
+
+            <!-- <label for="dob">Date of Birth:</label> -->
+            <input type="date" placeholder="Date of Birth" name="dob" id="dob" required>
+            <br>
+
+            <!-- <label for="email">Email:</label> -->
+            <input type="email" placeholder="Email" name="email" id="email" required>
+            
+
+            <!-- <label for="number">Number:</label> -->
+            <input type="tel" placeholder="Number" name="number" id="number" required>
+            <br>
+
+            <!-- <label for="password">Password:</label> -->
+            <input type="password" placeholder="Password" name="password" id="password" required>
+            <br>
+
+            <!-- <label for="repassword">Re-enter Password:</label> -->
+            <input type="password" placeholder="Re-enter Password" name="repassword" id="repassword" required>
+            <br>
+
+            <label>
+                <input type="checkbox" style="width: 30px; margin-top: 25px;" name="conditions" required>
+                By Joining, I accept the NovaAir Airwars Privacy Policy and Terms and Conditions
+            </label>
+            <br>
+            <input type="submit" style="margin-left: 300px; margin-top: 40px;" value="Create an Account">
+        </div>
+        </form>
+    </div>
+</body>
+
+</html>
