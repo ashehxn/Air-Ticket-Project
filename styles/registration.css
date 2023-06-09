@@ -16,6 +16,7 @@ nav {
 }
 
 .topnav {
+    background-color: #fff;
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -33,11 +34,12 @@ nav {
     color: #7048e8;
 }
 
-/* .top-logo {
+.top-logo {
     position: absolute;
     top: -13px;
-    left: 168px;
-} */
+    left: 168px;
+}
+
 
 .main-container {
     width: 1200px;
