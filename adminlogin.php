@@ -37,7 +37,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Admin Login</title>
-    <link rel="stylesheet" href="styles/login.css" />
+    <link rel="stylesheet" href="styles/adminlogin.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -65,14 +65,12 @@
       </nav>
 
     <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post" class="admin-login form_container">
-        <!-- <div class="logo_container">
+        <div class="logo_container">
             <img src="images/logo_with_txt.png" alt="Logo">
-        </div> -->
+        </div>
         
         <div class="title_container">
             <p class="title">Staff Login</p>
-            <!-- <span class="subtitle">Get started with our Airlines, just create an account and enjoy your travel
-                experience.</span> -->
         </div>
         <br>
 
@@ -107,6 +105,56 @@
             <span>Sign In</span>
         </button>
     </form>
+
+    <footer class="footer-distributed">
+      <div class="footer-left">
+        <h3>Nova Airways</h3>
+
+        <p class="footer-links">
+          <a href="./index.php">Home</a>
+          <a href="./book.php">Book</a>
+          <a href="./manage.php">Manage</a>
+          <a href="./wherewefly.php">Where we fly</a>
+          <a href="./destinations.php">Best Destinations</a>
+          <a href="./contact.php">Contact Us</a>
+        </p>
+
+        <p class="footer-company-name">Nova Airways © 2023</p>
+      </div>
+
+      <div class="footer-center">
+        <div>
+          <i class="fa fa-map-marker"></i>
+          <p>Katunayake, Sri Lanka</p>
+        </div>
+
+        <div>
+          <i class="fa fa-phone"></i>
+          <p>+94 11 223 3118</p>
+        </div>
+
+        <div>
+          <i class="fa fa-envelope"></i>
+          <p>
+            <a href="mailto:novaairways@company.com">novaairways@company.com</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-right">
+        <p class="footer-company-about">
+          <span>About the company</span>
+          Soaring to new heights, we offer exceptional service, unmatched
+          comfort, and seamless travel experiences. Fly with us today!
+        </p>
+        <div>
+          <i class="social-icon fab fa-facebook-f"></i>
+          <i class="social-icon fab fa-twitter"></i>
+          <i class="social-icon fab fa-instagram"></i>
+          <i class="social-icon fas fa-envelope"></i>
+        </div>
+      </div>
+    </footer>
     
 </body>
 </html>
