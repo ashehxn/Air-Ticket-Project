@@ -12,26 +12,19 @@ FONT SIZE SYSTEM (px)
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
   font-family: "Montserrat", sans-serif;
 }
 
 body {
-  background-image: url("../images/bg4.1.jpg");
+  background-image: url("../images/bg6.jpg");
   background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
-  background-size: 90%;
-  background-position-y: 120px;
-}
-
-.main-container {
-  width: 1200px;
-  margin: 0 auto;
+  background-size: 100%;
+  background-position-y: 90px;
 }
 
 /* Navigation */
-
 nav {
   background-color: #fff;
   height: 80px;
@@ -67,95 +60,118 @@ nav {
   left: 168px;
 }
 
-/* Header section */
-.header-section {
-  margin-bottom: 128px;
-}
-
-h2 {
-  text-align: center;
-  color: #444;
-  font-size: 26px;
-  margin-bottom: 80px;
-  margin-top: 580px;
-}
-
-.intro-paras {
-  text-align: center;
-  font-size: 18px;
-  margin-bottom: 24px;
-}
-
-/* Destination boxes */
-.destination-boxes {
-  height: 350px;
-  border-radius: 20px;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-  margin-bottom: 80px;
+.form_container {
+  width: fit-content;
+  height: fit-content;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  padding: 50px 40px 20px 40px;
+  background-color: #ffffff;
+  box-shadow: 0px 106px 42px rgba(0, 0, 0, 0.01),
+    0px 59px 36px rgba(0, 0, 0, 0.05), 0px 26px 26px rgba(0, 0, 0, 0.09),
+    0px 7px 15px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 23px;
+  margin-top: 100px;
+  margin-left: 30%;
+}
 
+.logo_container img {
+  width: 200px;
+}
+
+.title_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.title {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #212121;
+}
+
+.subtitle {
+  font-size: 0.725rem;
+  max-width: 80%;
+  text-align: center;
+  line-height: 1.1rem;
+  color: #8b8e98;
+}
+
+.input_container {
+  width: 100%;
+  height: fit-content;
   position: relative;
-}
-
-.destination-boxes img {
-  height: 350px;
-}
-
-.destination-boxes .img-type1 {
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
-}
-
-.destination-boxes .img-type2 {
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
-}
-
-.destination-heading {
   display: flex;
-  justify-content: space-between;
-  margin-top: 16px;
-  margin-bottom: 16px;
-  padding: 0 24px;
-  color: #7048e8;
+  flex-direction: column;
+  gap: 5px;
 }
 
-.destination-boxes ul {
-  padding: 24px;
+.icon {
+  width: 20px;
+  position: absolute;
+  z-index: 99;
+  left: 12px;
+  bottom: 9px;
 }
 
-.destination-boxes li {
-  margin-left: 32px;
-  margin-bottom: 24px;
+.input_label {
+  font-size: 0.75rem;
+  color: #8b8e98;
+  font-weight: 600;
 }
 
-.destination-boxes a {
+.input_field {
+  width: auto;
+  height: 40px;
+  padding: 0 0 0 40px;
+  border-radius: 7px;
+  outline: none;
+  border: 1px solid #e5e5e5;
+  filter: drop-shadow(0px 1px 0px #efefef)
+    drop-shadow(0px 1px 0.5px rgba(239, 239, 239, 0.5));
+  transition: all 0.3s cubic-bezier(0.15, 0.83, 0.66, 1);
+}
+
+.input_field:focus {
+  border: 1px solid transparent;
+  box-shadow: 0px 0px 0px 2px #242424;
+  background-color: transparent;
+}
+
+.sign-in_btn {
+  width: 100%;
+  height: 40px;
+  border: 0;
+  background: #115dfc;
+  border-radius: 23px;
+  outline: none;
+  color: #ffffff;
   cursor: pointer;
-  border: none;
-  color: #fff;
-  background-color: #7048e8;
-  padding: 12px 24px;
-  border-radius: 10px;
-  font-weight: 500;
-  text-decoration: none;
 }
 
-.destination-boxes a:hover {
-  color: #7048e8;
-  background-color: #fff;
-  border: 1px solid #7048e8;
+.sign-in_btn:hover {
+  background: #0d4ca8;
 }
 
-.button-type1 {
-  position: absolute;
-  right: 20px;
-  bottom: 20px;
+.note {
+  font-size: 0.75rem;
+  color: #8b8e98;
+  text-decoration: underline;
 }
 
-.button-type2 {
-  position: absolute;
-  right: 550px;
-  bottom: 20px;
+.admin-login {
+  width: 500px;
+  height: 500px;
+  margin: 128px auto;
+  padding-bottom: 20px;
 }
 
 /* Footer */
