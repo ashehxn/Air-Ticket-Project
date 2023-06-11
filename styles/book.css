@@ -7,12 +7,11 @@
 }
 
 body {
-  background-image: url("../images/bg7.jpg");
+  background-image: url("../images/bg9.jpg");
   background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
   background-size: 100%;
-  background-position-y: 55px;
 }
 
 ul {
@@ -78,10 +77,10 @@ nav {
   margin: 0 auto;
   position: relative;
   overflow: hidden;
-  margin-top: 100px;
+  margin-bottom: 80px;
   border-radius: 10px;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-  margin-bottom: 128px;
+  margin-top: 128px;
   padding-top: 40px;
 }
 

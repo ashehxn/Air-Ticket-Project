@@ -67,7 +67,7 @@
 
         <?php include "./components/navbar.php" ?>
 
-      </nav>
+    </nav>
     <div class="main-container">
         <div class="container" id="container">
             <div class="form-container sign-in-container">

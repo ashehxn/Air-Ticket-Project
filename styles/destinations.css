@@ -21,8 +21,8 @@ body {
   background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
-  background-size: 90%;
-  background-position-y: 120px;
+  background-size: 100%;
+  background-position-y: 80px;
 }
 
 .main-container {

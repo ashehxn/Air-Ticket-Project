@@ -81,7 +81,7 @@
                 to Michelin-starred restaurants.
               </li>
             </ul>
-            <a href="book.html" class="button-type1">Book Now</a>
+            <a href="./book.php" class="button-type1">Book Now</a>
           </div>
         </div>
         <div class="destination-boxes">
@@ -105,7 +105,7 @@
                 authentic ramen and tempura experiences.
               </li>
             </ul>
-            <a href="book.html" class="button-type2">Book Now</a>
+            <a href="./book.php" class="button-type2">Book Now</a>
           </div>
           <img src="images/tokyo2.jpg" alt="photo of paris" class="img-type2" />
         </div>
@@ -130,7 +130,7 @@
                 traditional pasta dishes to mouthwatering pizzas and gelato.
               </li>
             </ul>
-            <a href="book.html" class="button-type1">Book Now</a>
+            <a href="./book.php" class="button-type1">Book Now</a>
           </div>
         </div>
         <div class="destination-boxes">
@@ -155,7 +155,7 @@
                 hikes and unique wildlife encounters.
               </li>
             </ul>
-            <a href="book.html" class="button-type2">Book Now</a>
+            <a href="./book.php" class="button-type2">Book Now</a>
           </div>
           <img
             src="images/sydney2.jpg"
