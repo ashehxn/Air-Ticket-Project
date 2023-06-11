@@ -87,7 +87,7 @@ function showDetails4() {
 }
 
 function hideDetails1() {
-  destinationCard1.style.backgroundImage = "url('../images/paris1.jpg')";
+  destinationCard1.style.backgroundImage = "url('../AirTicketProject/images/paris1.jpg')";
   destinationCard1.style.boxShadow = "none";
   destinationPara1.style.opacity = "0%";
   destinationHeading1.style.color = "#000";
@@ -95,7 +95,7 @@ function hideDetails1() {
   destinationButton1.style.backgroundColor = "#845ef7";
 }
 function hideDetails2() {
-  destinationCard2.style.backgroundImage = "url('../images/tokyo1.jpg')";
+  destinationCard2.style.backgroundImage = "url('../AirTicketProject/images/tokyo1.jpg')";
   destinationCard2.style.boxShadow = "none";
   destinationPara2.style.opacity = "0%";
   destinationHeading2.style.color = "#000";
@@ -103,7 +103,7 @@ function hideDetails2() {
   destinationButton2.style.backgroundColor = "#845ef7";
 }
 function hideDetails3() {
-  destinationCard3.style.backgroundImage = "url('../images/rome1.jpg')";
+  destinationCard3.style.backgroundImage = "url('../AirTicketProject/images/rome1.jpg')";
   destinationCard3.style.boxShadow = "none";
   destinationPara3.style.opacity = "0%";
   destinationHeading3.style.color = "#000";
@@ -111,7 +111,7 @@ function hideDetails3() {
   destinationButton3.style.backgroundColor = "#845ef7";
 }
 function hideDetails4() {
-  destinationCard4.style.backgroundImage = "url('../images/sydney1.jpg')";
+  destinationCard4.style.backgroundImage = "url('../AirTicketProject/images/sydney1.jpg')";
   destinationCard4.style.boxShadow = "none";
   destinationPara4.style.opacity = "0%";
   destinationHeading4.style.color = "#000";

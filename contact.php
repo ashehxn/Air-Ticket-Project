@@ -135,14 +135,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
                 
 
                 <input name="middlename" type="text" placeholder="Second Name">
-                <br><br><span>* <?php echo $mnameErr;?></span>
+                <br><br><span> <?php echo $mnameErr;?></span>
 
                 <div class="lbl1">E-mail & Phone</div>
                 <input name="email" type="email" placeholder="John.wick@gmail.com">
-                <span>* <?php echo $emailErr;?></span>
+                <span> <?php echo $emailErr;?></span>
 
                 <input name="phone" type="phone" placeholder="(07x xxx xxxx)">
-                <span>* <?php echo $phoneErr;?></span><br><br>
+                <span> <?php echo $phoneErr;?></span><br><br>
 
                 <div  class="lbl1">Your Message </div>
                 
@@ -150,7 +150,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
             
             <div class="msg">
                 <textarea name="comment" rows="4" cols="96"></textarea>
-                <span>* <?php echo $commentErr;?></span>
+                <span><?php echo $commentErr;?></span>
                 <!-- <input type="text" style="width: 84%;"> -->
             </div>
 
