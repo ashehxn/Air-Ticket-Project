@@ -20,7 +20,7 @@
 
     <!-- CSS Sheet -->
     <link rel="stylesheet" href="styles/book.css">
-    <title>Manage</title>
+    <title>Book a Flight</title>
 </head>
 
 <body>
