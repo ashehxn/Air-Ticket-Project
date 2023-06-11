@@ -95,8 +95,8 @@
             </div>
     
         </div>
-        <form action="./myflight.php" method="post">
-          <button type="submit" name="submit" >choose</button>
+        <form action="./myflight.php" method="post" class="button-form">
+          <button type="submit" name="submit" >Choose</button>
         </form>
     </div>
     

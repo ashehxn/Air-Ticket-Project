@@ -76,7 +76,7 @@ $_SESSION['classNo'] = $classNo;
         <h1>Payments</h1>
         <div class="container" id="container">
             <div class="form-container sign-in-container">
-                <h4>Tokoyo, Japan</h4>
+                <h4>Tokyo, Japan</h4>
                 <form action="#">
                     <h3>To pay</h3>
                     <h1>LKR <?php echo $totalPrice ?></h1>
