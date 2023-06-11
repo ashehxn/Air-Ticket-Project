@@ -46,7 +46,7 @@ include "./db/db.php";
       <?php 
 
         if(isset($_SESSION['ID'])){
-          echo "<button>logout</button>";
+          echo "<button style='color:#FFF;'>Logout</button>";
         }
       
       ?>
