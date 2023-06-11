@@ -6,12 +6,11 @@
 }
 
 body {
-  background-image: url("../images/bg8.jpg");
+  background-image: url("../images/bg9.jpg");
   background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
   background-size: 100%;
-  background-position-y: 55px;
 }
 
 nav {

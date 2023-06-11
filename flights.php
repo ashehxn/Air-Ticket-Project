@@ -35,9 +35,9 @@
     <div class="main-container">
         <h1>Choose a flight</h1>
         <p class="title-description">Outbound, Colombo Bandaranayake Airport to Dubai(18 Options) </p>
-    </div>
+    
 
-    <?php 
+        <?php 
             session_start();
 
             include "./db/db.php";
@@ -66,38 +66,53 @@
                         $_SESSION['passengers'] = $passengers;
                         $_SESSION['price'] = $row["Price"];   
 
-            ?>
+         ?>
 
-    <div>
-        <div class="container">
-            <div class="main-table-container">
-                <div class="eco-container">
-                    <span class="class-text">Economy Class</span>
-                    <span class="from-text">From</span>
-                    <span class="class-price">LKR <?php echo $row["Price"] ?></span>
+        <div>
+            <div class="container">
+                <div class="flight-card-container">
+                    <div class="main-flight-details">
+                        <div class="main-flight-details-top">
+                          <span class="flight-no">1</span>
+                          <span class="flight-id">EN 1417</span>
+                        </div>
+                        <hr>
+                        <div class="container-flights-details">
+                          <div class="airport-and-time">
+                            <span class="destination1"><?php echo $row["DepartureAirport"] ?></span>
+                            <span class="destination1-time"><?php echo $row["DepartureTime"] ?></span>
+                          </div>
+                          <div class="airport-and-time">
+                            <span class="destination2"><?php echo $row["ArrivalAirport"] ?></span>
+                            <span class="destination2-time"><?php echo $row["ArrivalTime"] ?></span>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="right-side-of-card">
+                      <div class="class-container">
+                        <div class="eco-container">
+                          <span class="class-text">Economy Class</span>
+                          <span class="from-text">From</span>
+                          <span class="class-price">LKR <?php echo $row["Price"] ?></span>
+                        </div>
+                        <div class="business-container">
+                          <span class="class-text">Business Class</span>
+                          <span class="from-text">From</span>
+                          <span class="class-price">LKR <?php echo $row["Price"] * 1.5 ?></span>
+                        </div>
+                      </div>
+                      <div class="button-container">
+                        <form action="./myflight.php" method="post" class="button-form">
+                          <button type="submit" name="submit" >Choose</button>
+                        </form>
+                      </div>
+                    </div>
                 </div>
-                <div class="business-container">
-                    <span class="class-text">Business Class</span>
-                    <span class="from-text">From</span>
-                    <span class="class-price">LKR <?php echo $row["Price"] * 1.5 ?></span>
-                    
-                </div>
-                <div class="main-flight-details">
-                    <span class="flight-id">EN 1417</span>
-                    <div class="container-flights-details"></div>
-                    <span class="destination1"><?php echo $row["DepartureAirport"] ?></span>
-                    <span class="destination1-time"><?php echo $row["DepartureTime"] ?></span>
-                    <span class="destination2"><?php echo $row["ArrivalAirport"] ?></span>
-                    <span class="destination2-time"><?php echo $row["ArrivalTime"] ?></span>
-                    
-                </div>
-                
+        
             </div>
-    
+            
         </div>
-        <form action="./myflight.php" method="post" class="button-form">
-          <button type="submit" name="submit" >Choose</button>
-        </form>
+
     </div>
     
 

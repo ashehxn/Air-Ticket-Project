@@ -95,27 +95,13 @@ $_SESSION['classNo'] = $classNo;
                                 <option value="Visa">Visa Card</option>
                                 <option value="Master">Master Card</option>
                             </select>
-                        <label for="Expiration"> Expiration </label>
-                        <input type="Date" name="expiry_date"  placeholder="Month" />
+                            <label for="Expiration"> Expiration </label>
+                            <input type="Date" name="expiry_date"  placeholder="Month" />
 
                             <label for="cvv">CVV:</label>
                             <input type="text" id="cvv" name="cvv" required><br>
-                            <input style="cursor: pointer;" type="submit" name="submit" value="Submit Payment">
-                          </form>
-                        <!-- <h3>Pay with credit card</h3>
-
-                        <label for="ccn"> Credit Number</label>
-                        <input id="ccn" type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" autocomplete="cc-number" maxlength="19" placeholder="xxxx xxxx xxxx xxxx">
-
-                        <label for="Expiration"> Expiration </label>
-                        <input type="number" placeholder="Month" />
-                        <input type="number" placeholder="Year" />
-
-                        <label for="Expiration"> CCV </label>
-                        <input type="number" placeholder="CCV" />
-                        <button type="submit" class="sign-in_btn">
-                            <span>Pay Now</span>
-                        </button> -->
+                            <input style="cursor: pointer; color: #fff; background-color: #5f3dc4; width: 148px" type="submit" name="submit" value="Submit Payment">
+                        </form>
                     </div>
                 </div>
             </div>

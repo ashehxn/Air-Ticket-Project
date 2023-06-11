@@ -16,12 +16,11 @@ FONT SIZE SYSTEM (px)
 }
 
 body {
-  background-image: url("../images/bg6.jpg");
+  background-image: url("../images/bg9.jpg");
   background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
   background-size: 100%;
-  background-position-y: 90px;
 }
 
 /* Navigation */
