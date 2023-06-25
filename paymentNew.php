@@ -2,7 +2,7 @@
 
 session_start();
 
-include "./db/db.php";
+require "./admin_dashboard/db/db.php";;
 
 $classNo = $multiplier = "";
 

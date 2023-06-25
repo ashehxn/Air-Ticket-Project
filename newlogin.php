@@ -1,5 +1,5 @@
-<?php include "./db/db.php" ?>
 <?php 
+    require "./admin_dashboard/db/db.php";
 
     session_start();
 
@@ -65,7 +65,7 @@
         </div>
         <!------------------ Navigation bar --------------------->
 
-        <?php include "./components/navbar.php" ?>
+        <?php require "./components/navbar.php" ?>
 
     </nav>
     <div class="main-container">

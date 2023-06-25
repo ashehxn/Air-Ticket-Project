@@ -1,4 +1,4 @@
-<?php include "./db/db.php"; ?>
+<?php require "./admin_dashboard/db/db.php"; ?>
 
 <?php 
 

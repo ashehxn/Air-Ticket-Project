@@ -1,32 +1,29 @@
-<?php include "./db/db.php" ?>
-
 <?php 
+  require "./admin_dashboard/db/db.php";
+  session_start();
 
-    session_start();
+  $error = "";
 
-    $error = "";
+  if(isset($_POST["submit"])){
 
-    if(isset($_POST["submit"])){
+      $email = $_POST["email"];
+      $password = $_POST["password"];
 
-        $email = $_POST["email"];
-        $password = $_POST["password"];
+      $qur = "SELECT s.StaffPassword, e.Email, s.StaffType
+              FROM staff s, staff_email e
+              WHERE s.StaffID = e.StaffID AND s.StaffPassword = '$password' AND e.Email = '$email';";
 
-        $qur = "SELECT s.StaffPassword, e.Email, s.StaffType
-                FROM staff s, staff_email e
-                WHERE s.StaffID = e.StaffID AND s.StaffPassword = '$password' AND e.Email = '$email';";
+      $result = $conn->query($qur);
 
-        $result = $conn->query($qur);
+      if($row = $result->fetch_assoc()){
 
-        if($row = $result->fetch_assoc()){
+          $_SESSION['staffType'] = $row['StaffType'];
+          header("Location: ./Admin_dashboard/Staff_dashboard.php");
+      }else{
 
-            $_SESSION['staffType'] = $row['StaffType'];
-            header("Location: ./Admin_dashboard/Staff_dashboard.php");
-        }else{
-
-            $error = "Email or password incorrect";
-        }
-    }
-
+          $error = "Email or password incorrect";
+      }
+  }
 ?>
 
 <!DOCTYPE html>
@@ -59,7 +56,7 @@
         </div>
     <!------------------ Navigation bar --------------------->
 
-        <?php include "./components/navbar.php" ?>
+        <?php require "./components/navbar.php" ?>
 
 
       </nav>
