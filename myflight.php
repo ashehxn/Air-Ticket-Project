@@ -43,7 +43,7 @@ if (!isset($_SESSION['ID'])) {
         </div>
         <!------------------ Navigation bar --------------------->
 
-        <?php include "./components/navbar.php" ?>
+        <?php require "./components/navbar.php" ?>
 
     </nav>
 

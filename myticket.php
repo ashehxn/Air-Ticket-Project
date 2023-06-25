@@ -1,5 +1,5 @@
 <?php 
-    include "./db/db.php";
+    require "./admin_dashboard/db/db.php";
     session_start();
 
     // Check if the user is not logged in

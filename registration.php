@@ -1,6 +1,6 @@
 <?php
 
-include "./db/db.php";
+require "./admin_dashboard/db/db.php";;
 
 $fnameErr = $mnameErr = $lnameErr = $passwordErr = $cpasswordErr = $message = "";
 

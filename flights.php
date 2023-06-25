@@ -73,8 +73,8 @@
                 <div class="flight-card-container">
                     <div class="main-flight-details">
                         <div class="main-flight-details-top">
-                          <span class="flight-no">1</span>
-                          <span class="flight-id">EN 1417</span>
+                          <!-- <span class="flight-no">1</span> -->
+                          <span class="flight-id"><?php echo $row["FlightNo"] ?></span>
                         </div>
                         <hr>
                         <div class="container-flights-details">
@@ -113,21 +113,22 @@
             
         </div>
 
+        <?php 
+                
+
+              }
+          }
+  
+      else echo "<h1> No Result </h1>";
+  
+      }
+      $conn->close();
+  
+      ?>
     </div>
     
 
-    <?php 
-                
 
-            }
-        }
-
-    else echo "<h1> No Result </h1>";
-
-    }
-    $conn->close();
-
-    ?>
     
     
     <footer class="footer-distributed">
