@@ -43,7 +43,9 @@
 .popup .form .form-element input[type="text"],
 .popup .form .form-element input[type="password"],
 .popup .form .form-element input[type="number"],
-.popup .form .form-element input[type="email"]{
+.popup .form .form-element input[type="email"],
+.popup .form .form-element input[type="Date"],
+.popup .form .form-element input[type="Time"]{
 
 
     margin-top: 3px;
@@ -71,5 +73,18 @@
 }
 
 
+.form-element .staff{
+    margin-top: 3px;
+    margin-bottom: 10px;
+    display: block;
+    width: 94%;
+    padding: 10px;
+    outline: none;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
 
+.popup{
+    height: 130vh;
+}
 

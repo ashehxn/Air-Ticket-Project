@@ -39,11 +39,11 @@
 
                     <form action="<?php echo htmlspecialchars("./updateAdmin.php"); ?>" method="post">
                         <div class="form-element">
-                            <input type="hidden" name="id" id="id" value="<?php echo $row['StaffID'] ?>">
+                            <input type="hidden" name="id" id="id" value="<?php echo $row['StaffID'] ?>" required>
                         </div>
                         <div class="form-element">
                             <label for="fname">First name</label>
-                            <input type="text" name="fname" id="fname" placeholder="<?php echo $row['FirstName'] ?>">
+                            <input type="text" name="fname" id="fname" placeholder="<?php echo $row['FirstName'] ?>" required>
                         </div>
                         <div class="form-element">
                             <label for="mname">Middle name</label>
@@ -51,21 +51,21 @@
                         </div>
                         <div class="form-element">
                             <label for="surname">Surname</label>
-                            <input type="text" id="surname" name="surname" placeholder="<?php echo $row['SurName'] ?>">
+                            <input type="text" id="surname" name="surname" placeholder="<?php echo $row['SurName'] ?>" required>
                         </div>
                         <div class="form-element">
                             <label for="email">email</label>
-                            <input type="email" name="email" id="email" placeholder="<?php echo $row['Email'] ?>">
+                            <input type="email" name="email" id="email" placeholder="<?php echo $row['Email'] ?>" required>
                         </div>
 
                         <div class="form-element">
                             <label for="password">password</label>
-                            <input type="password" name="password" id="password" placeholder="<?php echo $row['StaffPassword'] ?>">
+                            <input type="password" name="password" id="password" placeholder="<?php echo $row['StaffPassword'] ?>" required>
                         </div>
 
                         <div class="form-element">
                             <label for="contact">Contact no</label>
-                            <input type="number" name="contact" id="contact" placeholder="<?php echo $row['PhoneNo'] ?>">
+                            <input type="number" name="contact" id="contact" placeholder="<?php echo $row['PhoneNo'] ?>" required>
                         </div>
             
                         <div class="form-element">

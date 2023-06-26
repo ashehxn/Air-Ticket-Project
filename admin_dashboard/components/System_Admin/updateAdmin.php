@@ -11,50 +11,41 @@
 
     if(isset($_POST["submit"])) {
 
-        $fnameErr = $emailErr = $passwordErr = $surnameErr = $contactErr ="";
-
-        if($_SERVER["REQUEST_METHOD"] == "POST") {
+        $Error = "";
 
             if(empty($_POST["fname"])) {
-                $fnameErr = "First name is required";
+                $Error = "First name is required";
             } else {
                 $name = test_input($_POST["fname"]);
 
                 if(!preg_match("/^[a-zA-Z-' ]*$/", $name)) {
-                    $fnameErr = "Only letters and white spaces allowed";
+                    $Error = "Only letters and white spaces allowed";
                 }
             }
 
             if(empty($_POST["surname"])) {
-                $nameErr = "Surname is required";
+                $Error = "Surname is required";
             } else {
                 $name = test_input($_POST["surname"]);
 
                 if(!preg_match("/^[a-zA-Z-' ]*$/", $name)) {
-                    $surnameErr = "Only letters and white spaces allowed";
+                    $Error = "Only letters and white spaces allowed";
                 }
             }
 
             if(empty($_POST["email"])){
-                $emailErr = "Email is required";
+                $Error = "Email is required";
             } else {
                 $email = test_input($_POST["email"]);
                 if(!filter_var($email, FILTER_VALIDATE_EMAIL)){
-                    $emailErr = "Invalid email format";
+                    $Error = "Invalid email format";
                 }
             }
 
-           if(empty($_POST["contact"])){
-                $contactErr = "Contact no is required";
-           }
-
-            if(empty($_POST["password"])){
-                $passwordErr = "Password is required";
-            }
 
         }
 
-        if($fnameErr === "" && $emailErr === "" && $passwordErr === "" && $surnameErr === "") {
+        if($Error === "") {
 
             $fname = $_POST["fname"];
             $surname = $_POST["surname"];
@@ -78,14 +69,13 @@
 
         } else {
 
-            echo $fnameErr;
-            echo $emailErr;
-            echo $passwordErr;
-            echo $surnameErr;
+            echo "<script> 
+                    alert('" . $Error . "');
+                    window.location.href = '../../Staff_dashboard.php'; 
+                </script>";
         }
 
-        //header("Location: ../../Staff_dashboard.php");
-    }
+    
 ?>
 
 <?php $conn->close() ?>

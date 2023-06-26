@@ -93,7 +93,7 @@
                         <div class="eco-container">
                           <span class="class-text">Economy Class</span>
                           <span class="from-text">From</span>
-                          <span class="class-price">LKR <?php echo $row["Price"] ?></span>
+                          <span class="class-price">LKR <?php echo $row["Price"] * $_SESSION['passengers'] ?></span>
                         </div>
                         <div class="business-container">
                           <span class="class-text">Business Class</span>

@@ -132,7 +132,7 @@ require "./admin_dashboard/db/db.php";
             <div class="input-boxes trip-input">
               <label>Trip</label>
               <select name="way" class="drop-down">
-                <option>One Way</option>
+                <!-- <option>One Way</option> -->
                 <option>Return</option>
               </select>
             </div>
