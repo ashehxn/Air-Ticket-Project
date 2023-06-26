@@ -16,7 +16,7 @@
                 
                 <div class="form">
 
-                    <h2>Add admin</h2>
+                    <h2>Add new flight</h2>
                     <form action="<?php echo htmlspecialchars('./createflight.php'); ?>" method="post">
 
                         <div class="form-element">
@@ -49,7 +49,7 @@
                         <div class="form-element">
                             <label for="staff">Choose Staff member :</label>
 
-                            <select name="staff" id="staff" required>
+                            <select name="staff" class="staff" id="staff" required>
 
                             <?php 
 
@@ -73,7 +73,7 @@
                             <label for="route">Choose Route :</label>
 
                             
-                            <select name="route" id="staff" required>
+                            <select name="route" class="staff" id="staff" required>
 
                             <?php 
 

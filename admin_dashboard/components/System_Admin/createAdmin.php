@@ -11,49 +11,39 @@
 
     if(isset($_POST["submit"])) {
 
-        $nameErr = $emailErr = "";
+        $Error = "";
 
-        if($_SERVER["REQUEST_METHOD"] == "POST") {
-
-        $name = test_input($_POST["name"]);
+        $name = test_input($_POST["fname"]);
 
         if(!preg_match("/^[a-zA-Z-' ]*$/", $name)) {
-            $nameErr = "Only letters and white spaces allowed";
+            $Error = "Only letters and white spaces allowed";
+        }
+
+        $name = test_input($_POST["mname"]);
+
+        if(!preg_match("/^[a-zA-Z-' ]*$/", $name)) {
+            $Error = "Only letters and white spaces allowed";
+        }
+
+        $name = test_input($_POST["lname"]);
+
+        if(!preg_match("/^[a-zA-Z-' ]*$/", $name)) {
+            $Error = "Only letters and white spaces allowed";
         }
                  
         $email = test_input($_POST["email"]);
         if(!filter_var($email, FILTER_VALIDATE_EMAIL)){
-            $emailErr = "Invalid email format";
+            $Error = "Invalid email format";
         }
             
-        }
+        
 
-        if($nameErr === "" && $emailErr === "") {
+        if($Error === "") {
 
             $staffID = $_POST["id"];
-            $fullname = $_POST["name"];
-
-            $first_name = "";
-            $middle_name = "";
-            $last_name = "";
-
-            $name_parts = explode(" ", $fullname);
-
-            if(count($name_parts) == 2 || count($name_parts) == 3 ){
-
-                if (count($name_parts) == 3) {
-                    $first_name = $name_parts[0];
-                    $middle_name = $name_parts[1];
-                    $last_name = $name_parts[2];
-                }else if(count($name_parts) == 2){
-                    $first_name = $name_parts[0];
-                    $middle_name = "";
-                    $last_name = $name_parts[1];
-                }
-                
-            }else{
-                echo "First name and Middle name and Surname required..";
-            }
+            $first_name = $_POST["fname"];
+            $middle_name = $_POST["mname"];
+            $last_name = $_POST["lname"];
 
             $email = $_POST["email"];
             $password = $_POST["password"];
@@ -91,10 +81,12 @@
     }
     }else {
 
-        echo $nameErr;
-        echo $emailErr;
+        echo "<script> 
+                alert('" . $Error . "');
+                window.location.href = './addAdmin.php'; 
+            </script>";
     }
-        //header("Location: ../../Staff_dashboard.php");
+
     }
 ?>
 
