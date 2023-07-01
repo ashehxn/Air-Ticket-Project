@@ -57,7 +57,7 @@
       <section class="destinations-tables">
         <div class="button-container">
           <button id="btn1" onclick="openTable1()">Africa</button>
-          <button id="btn2" onclick="openTable2()">Australasia</button>
+          <button id="btn2" onclick="openTable2()">Australia</button>
           <button id="btn3" onclick="openTable3()">Europe</button>
           <button id="btn4" onclick="openTable4()">Far East</button>
           <button id="btn5" onclick="openTable5()">Gulf and Middle East</button>
